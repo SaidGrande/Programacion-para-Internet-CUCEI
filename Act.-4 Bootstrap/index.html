@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web con BootStrap</title>
+
+    <!--Para el BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Para los iconos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--Para nuestro css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand"> <span class="text-purple"> wake </span> ful </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--El Carousel de Imagenes-->
+    <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="1" aria-current="true"
+                aria-label="Slide 2"></button>
+
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="2" aria-current="true"
+                aria-label="Slide 3"></button>
+    
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="3" aria-current="true"
+                aria-label="Slide 4"></button>
+    
+            <button type="button" data-bs-target="#carouselE" data-bs-slide-to="4" aria-current="true"
+                aria-label="Slide 5"></button>
+
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/vid1.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h5>Minecraft</h5>
+                    <p>Cubos, más cubos y puros cubos ¿Qué se puede decir de un juego donde siempre veo un tiktok de el? </p>
+                    <a href="#" class="btn btn-primary mt-3">Mas Informacion</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/vid2.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h5>Star Wars Battlefront II</h5>
+                    <p>Joder, murio pero revivio, increible el juego, la verdad si lo recomiendo, no sali por 2 semenas con tal de conseguir puntos para mis tarjetas</p>
+                    <a href="#" class="btn btn-primary mt-3">Mas Informacion</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/vid3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h5>Battlefield I</h5>
+                    <p>Pium pium, le cayo un metorito a mi compa, gran juego, me meti en el personaje, la verdad la imenserion esta en otro nivel...</p>
+                    <a href="#" class="btn btn-primary mt-3">Mas Informacion</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/vid4.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h5>Halo 2</h5>
+                    <p>Joya de joyas, gran historio, gran lore, grandes personajes, simplemente puedo decir que estuve vivo cuando fue escrito, el inquisiudor >>>> Master Chief</p>
+                    <a href="#" class="btn btn-primary mt-3">Mas Informacion</a>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="img/vid5.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h5>Star Wars Jedi Fallen Order</h5>
+                    <p>De los ultimos juegos que jugue y le tuve cariño, la ntt si lo recomiendo, ya casi lo completo al 100%</p>
+                    <a href="#" class="btn btn-primary mt-3">Mas Informacion</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Botones de al lado del carousel-->
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselE"
+            data-bs-slide="prev"
+            >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previus</span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+        data-bs-target="#carouselE"
+        data-bs-slide="next"
+        >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+    <!--Seccion del about-->
+    <section class="about section-padding">
+
+        <div class="container">
+            
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="img/progra.jpeg" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text text-white">
+                        <h2>¿Qué es lo que <br>estudio?</h2>
+                        <p>Actualmente ando cursando mi ingeneria en informatica, me sorprende porque ya voy en 5to semestre, no se como estoy llegando tan lejor, pero luzco increible diciendo que soy "ingeniero", la verdad si le se, pero no tanto como para estar en este semester...</p>
+                        <a href="#" class="btn btn-primary"> Más Información</a>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    
+    <!--Seccion de portafolio-->
+<section class="portfolio section-padding">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-header text-center text-white pb-5">
+                <h2>Top Mejores YouTubers de la Historia</h2>
+                <p>A continuacion hare un top 3 lo que para mi son los mejores <br> en lo personal no espero que gente este de acuerdo pero lo entiendo, no todos tienen buenos gustos :)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-dark pb-2">
+                <div class="card-body text-white">
+                    <div class="img-area mb-4">
+                        <img src="img/yt1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <h3>Vegeta 777</h3>
+                    <p class="lead">Dios, que te puedo decir de este man, casi toda mi infancia comi mas con el que con mi papa, joder, que tiempos, si no lo conoces no se donde vives, personalmente tiene un gran espacio en mi corazon, un grande. </p>
+                    <button class="btn bg-primary text-white"> Más Información</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-dark pb-2">
+                <div class="card-body text-white">
+                    <div class="img-area mb-4">
+                        <img src="img/yt2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <h3>Fernanfloo</h3>
+                    <p class="lead">Claro que si, Fernanfloo, aquella bella epoca del internet, donde no te podian funar por nada, donde podias decir muchas cosas sabiendo que era humor, el icono de lo que son desafios extremos (pasar geometry dash con los ojos cerrados) wow, simplemente merecia una despedida fiel al canon</p>
+                    <button class="btn bg-primary text-white"> Más Información</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-dark pb-2">
+                <div class="card-body text-white">
+                    <div class="img-area mb-4">
+                        <img src="img/yt3.jpg" class="img-fluid" alt="">
+                    </div>
+                    <h3>La Largatija Cosmica</h3>
+                    <p class="lead">Ntt creo que si este es old de los old's, no creo que mucho lo conozcan, pero fuck que buenos tutoriales se aventaba sobre las construcciones de minecraft, en lo personal me vi muchos de sus videos, aun espero su regreso o su simple explicacion del porque se fue... la largatica cosmica turururuuuu.</p>
+                    <button class="btn bg-primary text-white"> Más Información</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!--Seccion del equipo-->
+    <section class="team section-padding">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="section-header text-center text-white pb-5">
+                    <h2>¿Quien Soy?</h2>
+                    <p>Muy buena pregunta para un mal momento, ya que la gente que me conoce <br>sabe que me comunico hasta por los codos, pero con gusto les puedo contar quien soy, ahi abajo estan mis enlaces a mi perfil de insta, mandenme dm y con gusto les puedo platicar quien soy...</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div>
+                    <div class="card text-center bg-dark">
+                        <div class="card-body text-white">
+                            <img src="img/Perfil.png" class="img-fluid rounded-circle" alt="">
+                            <h3 class="card-title py-2">Said Omar Hernandez Grande</h3>
+                            <p class="card-text">Soy un estudiante que disfruta mucho el tiempo solo, siento yo que tengo muy bien distribuido mi tiempo para poder hacer todo lo que me gusta, por ejemplo ejericio, voy al gym y los fines de semana juego basquetball, en las tardes hago mis tareas para poder disfrutar del resto del día, si me sobre el tiempo, leeo unos libros, actualmente estoy leyendo "Piensa rápido habla lento...", despues de leer un rato estudio ingles, para que no se me olvide, y ya el resto de dia lo organizo de tal manera que decida que quiero hacer, tocar la guitarra, dibujar, escuchar musica, ver una serie o especialmente un anime o ver videos de youtube, pero a veces opto por jugar, chau chau ;)</p>
+                            <p class="socials">
+                                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2XNVIN5huIJLOkYRD9qQIKCPUvc3DtmWpug&s" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-twitter text-white mx-1"></i>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=100008496003226" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-facebook text-white mx-1"></i>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=eP3dw9-js4k" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-youtube text-white mx-1"></i>
+                                </a>
+                                <a href="https://www.instagram.com/_said_hg/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram text-white mx-1"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Seccion del Contacto-->
+    <section class="contact section-padding">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center text-white pb-5">
+                        <h2>Asesor de Mancos (Contactame)</h2>
+                        <p>Con mucho gusto te ayudo caramelito<br>juego cualquier tipo de juego, siempre y cuando no vengan de dudosa procedencia, desde fortnite hasta el busca minas, lo que quieras mi pa, yo te acarreo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-0">
+                <div class="col-md-12 p-0 pt-4 pb-4">
+                    <form action="#" class="bg-dark p-4 m-auto">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="col-md-12"></div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Gamertag">
+                                </div>
+                            </div>
+                            <div class="col-md-12"></div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" placeholder="Mensaje" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary btn-lg btn-block mt-3">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark p-2 text-center">
+        <div class="container">
+            <p class="text-white">Manten tu corazón ardiendo</p>
+        </div>
+    </footer>
+
+    <!--Para el BootStrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

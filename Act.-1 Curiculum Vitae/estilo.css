@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5%
+}
+
+header {
+    text-align: center;
+    background-color: #191F35;
+}
+
+header h1,
+header h2 {
+    font-weight: normal;
+    line-height: 1;
+}
+
+header h2{
+    margin-top: 5px;
+    opacity: 0.5;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.5em;
+    margin-bottom: 1%;
+}
+
+h4{
+    margin-top: 5%;
+}
+
+.Skills i{
+    font-size: 0.8em;
+    color: #5106e8;
+    background: #fff;
+    border-radius: 2em;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em;
+}
+
+.experiencia i{
+    font-size: 0.8em;
+    color: #fff;
+    background: #5106e8;
+    border-radius: 2em;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em;
+}
+
+.container{
+    background-color: #1F253D;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cabecera {
+    width: 100%;
+    height: 300px; /* Ajusta la altura según necesites */
+    background-image: url('img/Programacion.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    position: relative; /* Quitar absolute y mantener relative */
+    display: flex; /* Para centrar el contenido dentro de la cabecera */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    text-align: center; /* Centrar el texto */
+}
+
+.nombre h1, 
+.nombre h2 {
+    color: #fff;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.foto{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    border: 7px solid #5106e8;
+    margin: 5%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.foto img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nombre{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contenido_cv{
+    display: flex;
+    width: 100%;
+}
+
+.Skills{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #5106e8;
+    padding: 5%;
+    width: 28%;
+}
+
+.Skills ul{
+    margin-left: 5%;
+}
+
+.carta_presentacion{
+    text-align: justify;
+}
+
+.grafico{
+    width: 34px;
+    height: 34px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1%;
+}
+
+.donut-hole{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background-color: #5106e8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.sector{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    transform-origin: left;
+}
+
+#sector1{
+    transform: rotate(0deg);
+    background-color: #f91c8a;
+}
+
+#sector2{
+    transform: rotate(120deg);
+    background-color: #2d0b7c;
+}
+
+#sector3{
+    transform: rotate(240deg);
+    background-color: #58d1bc;
+}
+
+#Lead1 {
+    transform: rotate(0deg); /* 0 grados */
+    background-color: #f91c8a;
+}
+
+#Lead2 {
+    transform: rotate(90deg); /* 90 grados */
+    background-color: #5106e8;
+}
+
+#Lead3 {
+    transform: rotate(180deg); /* 180 grados */
+    background-color: #58d1bc;
+}
+
+/* Teamwork */
+#Team1 {
+    transform: rotate(45deg); /* 45 grados */
+    background-color: #5106e8;
+}
+
+#Team2 {
+    transform: rotate(135deg); /* 135 grados */
+    background-color: #f91c8a;
+}
+
+#Team3 {
+    transform: rotate(225deg); /* 225 grados */
+    background-color: #58d1bc;
+}
+
+/* Project Management */
+#PM1 {
+    transform: rotate(30deg); /* 30 grados */
+    background-color: #5106e8;
+}
+
+#PM2 {
+    transform: rotate(120deg); /* 120 grados */
+    background-color: #58d1bc;
+}
+
+#PM3 {
+    transform: rotate(210deg); /* 210 grados */
+    background-color: #f91c8a;
+}
+
+/* C++ */
+#C1 {
+    transform: rotate(10deg); /* 10 grados */
+    background-color: #f91c8a;
+}
+#C2 {
+    transform: rotate(120deg); /* 120 grados */
+    background-color: #58d1bc;
+}
+#C3 {
+    transform: rotate(230deg); /* 230 grados */
+    background-color: #5106e8;
+}
+
+/* C# */
+#CC1 {
+    transform: rotate(15deg); /* 15 grados */
+    background-color: #58d1bc;
+    
+}
+#CC2 {
+    transform: rotate(150deg); /* 150 grados */
+    background-color: #5106e8;
+}
+#CC3 {
+    transform: rotate(270deg); /* 270 grados */
+    background-color: #f91c8a;
+}
+
+/* HTML */
+#HTML1 {
+    transform: rotate(5deg); /* 5 grados */
+    background-color: #58d1bc;
+}
+#HTML2 {
+    transform: rotate(100deg); /* 100 grados */
+    background-color: #f91c8a;
+}
+#HTML3 {
+    transform: rotate(210deg); /* 210 grados */
+    background-color: #5106e8;
+}
+
+/* Languages */
+/* English */
+#E1 {
+    transform: rotate(5deg); /* 5 grados */
+    background-color: #58d1bc;
+}
+#E2 {
+    transform: rotate(100deg); /* 100 grados */
+    background-color: #f91c8a;
+}
+#E3 {
+    transform: rotate(210deg); /* 210 grados */
+    background-color: #58d1bc;
+}
+/* Spanish */
+#Sp1 {
+    transform: rotate(0deg); /* Empieza desde 0 grados */
+    background-color: #f91c8a;
+}
+#Sp2 {
+    transform: rotate(120deg); /* 120 grados para el segundo sector */
+    background-color: #58d1bc;
+}
+#Sp3 {
+    transform: rotate(240deg); /* 240 grados para el tercer sector */
+    background-color: #58d1bc;
+}
+
+/* Software */
+
+/* Visual Studio Code */
+#VSCode {
+    transform: rotate(0deg); /* Empieza desde 0 grados */
+    background-color: #58d1bc;
+}
+#Unity {
+    transform: rotate(252deg); /* 252 grados para el segundo sector */
+    background-color: #f91c8a;
+}
+#UnrealEngine {
+    transform: rotate(324deg); /* 324 grados para el tercer sector */
+    background-color: #58d1bc;
+}
+/* Unity */
+#UnityGraph {
+    transform: rotate(0deg); /* Empieza desde 0 grados */
+    background-color: #f91c8a;
+}
+#UnrealEngineGraph {
+    transform: rotate(255deg); /* 255 grados para el segundo sector */
+    background-color: #58d1bc;
+}
+#Other {
+    transform: rotate(360deg); /* 360 grados para el tercer sector */
+     /* Color de fondo o cualquier otro color */
+}
+/* Unreal Engine */
+#UnrealEngineGraph1 {
+    transform: rotate(0deg); /* Empieza desde 0 grados */
+    background-color: #58d1bc;
+}
+#OtherGraph {
+    transform: rotate(200deg); /* 200 grados para el segundo sector */
+    background-color: #f91c8a;
+}
+
+
+.ability {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    width: 50%;
+}
+
+.experience {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    width: 50%;
+}
+
+.experience h3{
+    text-align: right;
+}
+
+.school {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+} 
+
+.year {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 49%;
+}
+
+.description {
+    margin-top: -3;
+    text-align: justify;
+}
